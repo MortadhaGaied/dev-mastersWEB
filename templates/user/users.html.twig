@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello UserController!{% endblock %}
+
+{% block body %}
+    <h1>List of Users</h1>
+    <p><a href="{{ path('add_user') }}">Add user</a></p>
+    {% for user in users %}
+        <table>
+            <thead>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Number</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Role</th>
+                <th>Birthday</th>
+                <th>Created user date</th>
+                <th>Last updated user</th>
+                <th>Modifu</th>
+                <th>Delete</th>
+
+            </thead>
+            <tbody>
+                <td>{{ user.id }}</td>
+                <td>{{ user.getFirstName() }}</td>
+                <td>{{ user.getLastName() }}</td>
+                <td>{{ user.getEmail() }}</td>
+                <td>{{ user.getNumber() }}</td>
+                <td>{{ user.getUsername() }}</td>
+                <td>{{ user.getPassword() }}</td>
+                <td>{{ user.getRole() }}</td>
+                <td>{{ user.getBirthday()|date("m/d/Y") }}</td>
+                <td>{{ user.getCreatedDateUser()|date('Y-m-d H:i:s') }}</td>
+                <td>{{ user.getLastUpdatedUser()|date('Y-m-d H:i:s') }}</td>
+                <td><a href="{{ path('modify_user', {'id': user.id}) }}">Modifier</a></td>
+                <td><a href="{{ path('delete_user', {'id': user.id}) }}">Supprimer</a></td>
+            </tbody>
+        </table>
+    {% endfor %}
+{% endblock %}

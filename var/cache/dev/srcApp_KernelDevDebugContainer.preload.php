@@ -10,7 +10,7 @@ if (in_array(PHP_SAPI, ['cli', 'phpdbg'], true)) {
 }
 
 require dirname(__DIR__, 3).''.\DIRECTORY_SEPARATOR.'vendor/autoload.php';
-require __DIR__.'/ContainerLrptADW/srcApp_KernelDevDebugContainer.php';
+require __DIR__.'/ContainerGWULl83/srcApp_KernelDevDebugContainer.php';
 
 $classes = [];
 $classes[] = 'Symfony\Bundle\FrameworkBundle\FrameworkBundle';
@@ -24,6 +24,7 @@ $classes[] = 'Doctrine\Bundle\DoctrineBundle\DoctrineBundle';
 $classes[] = 'Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle';
 $classes[] = 'Symfony\Bundle\SecurityBundle\SecurityBundle';
 $classes[] = 'Twig\Extra\TwigExtraBundle\TwigExtraBundle';
+$classes[] = 'Symfony\Bundle\WebServerBundle\WebServerBundle';
 $classes[] = 'Symfony\Component\HttpClient\TraceableHttpClient';
 $classes[] = 'Symfony\Contracts\HttpClient\HttpClientInterface';
 $classes[] = 'Symfony\Component\HttpClient\HttpClient';
@@ -32,6 +33,9 @@ $classes[] = 'Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser';
 $classes[] = 'Symfony\Bundle\FrameworkBundle\EventListener\ResolveControllerNameSubscriber';
 $classes[] = 'Symfony\Component\HttpFoundation\RequestMatcher';
 $classes[] = 'Symfony\Component\DependencyInjection\ServiceLocator';
+$classes[] = 'App\Controller\UserController';
+$classes[] = 'App\Form\UserFormType';
+$classes[] = 'App\Repository\UserRepository';
 $classes[] = 'Doctrine\Bundle\DoctrineBundle\Dbal\ManagerRegistryAwareConnectionProvider';
 $classes[] = 'Doctrine\Bundle\DoctrineBundle\Registry';
 $classes[] = 'Doctrine\DBAL\Tools\Console\Command\RunSqlCommand';
@@ -277,6 +281,7 @@ $classes[] = 'Symfony\Bridge\Monolog\Command\ServerLogCommand';
 $classes[] = 'Symfony\Bridge\Monolog\Handler\ConsoleHandler';
 $classes[] = 'Monolog\Handler\StreamHandler';
 $classes[] = 'Monolog\Processor\PsrLogMessageProcessor';
+$classes[] = 'Symfony\Component\DependencyInjection\ParameterBag\ContainerBag';
 $classes[] = 'Symfony\Component\HttpKernel\Profiler\Profiler';
 $classes[] = 'Symfony\Component\HttpKernel\Profiler\FileProfilerStorage';
 $classes[] = 'Symfony\Component\HttpKernel\DataCollector\TimeDataCollector';
@@ -305,7 +310,6 @@ $classes[] = 'Symfony\Component\PropertyInfo\Extractor\SerializerExtractor';
 $classes[] = 'Symfony\Component\HttpFoundation\RequestStack';
 $classes[] = 'Symfony\Component\HttpKernel\EventListener\ResponseListener';
 $classes[] = 'Symfony\Bundle\FrameworkBundle\Routing\Router';
-$classes[] = 'Symfony\Component\DependencyInjection\ParameterBag\ContainerBag';
 $classes[] = 'Symfony\Bundle\FrameworkBundle\CacheWarmer\RouterCacheWarmer';
 $classes[] = 'Symfony\Component\Routing\RequestContext';
 $classes[] = 'Symfony\Component\HttpKernel\EventListener\RouterListener';
@@ -484,5 +488,9 @@ $classes[] = 'Symfony\Bundle\WebProfilerBundle\Controller\RouterController';
 $classes[] = 'Symfony\Bundle\WebProfilerBundle\Csp\ContentSecurityPolicyHandler';
 $classes[] = 'Symfony\Bundle\WebProfilerBundle\Csp\NonceGenerator';
 $classes[] = 'Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener';
+$classes[] = 'Symfony\Bundle\WebServerBundle\Command\ServerRunCommand';
+$classes[] = 'Symfony\Bundle\WebServerBundle\Command\ServerStartCommand';
+$classes[] = 'Symfony\Bundle\WebServerBundle\Command\ServerStatusCommand';
+$classes[] = 'Symfony\Bundle\WebServerBundle\Command\ServerStopCommand';
 
 Preloader::preload($classes);
