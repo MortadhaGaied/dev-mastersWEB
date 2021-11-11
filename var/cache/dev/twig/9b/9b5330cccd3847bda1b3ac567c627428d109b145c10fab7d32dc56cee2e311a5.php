@@ -93,225 +93,251 @@ class __TwigTemplate_8f5d2cee2bdeb57146f7dc345984ed9687d37442443c15aefc31571e6f7
     <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js\"></script>
     <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js\"></script>
     <style>
-    .table-responsive {
-    margin: 30px 0;
-    }
-    .table-wrapper {
-    background: #fff;
-    padding: 20px 25px;
-    border-radius: 3px;
-    min-width: 1000px;
-    box-shadow: 0 1px 1px rgba(0,0,0,.05);
-    }
-    .table-title {
-    padding-bottom: 15px;
-    background: #435d7d;
-    color: #fff;
-    padding: 16px 30px;
-    min-width: 100%;
-    margin: -20px -25px 10px;
-    border-radius: 3px 3px 0 0;
-    }
-    .table-title h2 {
-    margin: 5px 0 0;
-    font-size: 24px;
-    }
-    .table-title .btn-group {
-    float: right;
-    }
-    .table-title .btn {
-    color: #fff;
-    float: right;
-    font-size: 13px;
-    border: none;
-    min-width: 50px;
-    border-radius: 2px;
-    border: none;
-    outline: none !important;
-    margin-left: 10px;
-    }
-    .table-title .btn i {
-    float: left;
-    font-size: 21px;
-    margin-right: 5px;
-    }
-    .table-title .btn span {
-    float: left;
-    margin-top: 2px;
-    }
-    table.table tr th, table.table tr td {
-    border-color: #e9e9e9;
-    padding: 12px 15px;
-    vertical-align: middle;
-    }
-    table.table tr th:first-child {
-    width: 60px;
-    }
-    table.table tr th:last-child {
-    width: 100px;
-    }
-    table.table-striped tbody tr:nth-of-type(odd) {
-    background-color: #fcfcfc;
-    }
-    table.table-striped.table-hover tbody tr:hover {
-    background: #f5f5f5;
-    }
-    table.table th i {
-    font-size: 13px;
-    margin: 0 5px;
-    cursor: pointer;
-    }
-    table.table td:last-child i {
-    opacity: 0.9;
-    font-size: 22px;
-    margin: 0 5px;
-    }
-    table.table td a {
-    font-weight: bold;
-    color: #566787;
-    display: inline-block;
-    text-decoration: none;
-    outline: none !important;
-    }
-    table.table td a:hover {
-    color: #2196F3;
-    }
-    table.table td a.edit {
-    color: #FFC107;
-    }
-    table.table td a.delete {
-    color: #F44336;
-    }
-    table.table td i {
-    font-size: 19px;
-    }
-    table.table .avatar {
-    border-radius: 50%;
-    vertical-align: middle;
-    margin-right: 10px;
-    }
-    .pagination {
-    float: right;
-    margin: 0 0 5px;
-    }
-    .pagination li a {
-    border: none;
-    font-size: 13px;
-    min-width: 30px;
-    min-height: 30px;
-    color: #999;
-    margin: 0 2px;
-    line-height: 30px;
-    border-radius: 2px !important;
-    text-align: center;
-    padding: 0 6px;
-    }
-    .pagination li a:hover {
-    color: #666;
-    }
-    .pagination li.active a, .pagination li.active a.page-link {
-    background: #03A9F4;
-    }
-    .pagination li.active a:hover {
-    background: #0397d6;
-    }
-    .pagination li.disabled i {
-    color: #ccc;
-    }
-    .pagination li i {
-    font-size: 16px;
-    padding-top: 6px
-    }
-    .hint-text {
-    float: left;
-    margin-top: 10px;
-    font-size: 13px;
-    }
-    /* Custom checkbox */
-    .custom-checkbox {
-    position: relative;
-    }
-    .custom-checkbox input[type=\"checkbox\"] {
-    opacity: 0;
-    position: absolute;
-    margin: 5px 0 0 3px;
-    z-index: 9;
-    }
-    .custom-checkbox label:before{
-    width: 18px;
-    height: 18px;
-    }
-    .custom-checkbox label:before {
-    content: '';
-    margin-right: 10px;
-    display: inline-block;
-    vertical-align: text-top;
-    background: white;
-    border: 1px solid #bbb;
-    border-radius: 2px;
-    box-sizing: border-box;
-    z-index: 2;
-    }
-    .custom-checkbox input[type=\"checkbox\"]:checked + label:after {
-    content: '';
-    position: absolute;
-    left: 6px;
-    top: 3px;
-    width: 6px;
-    height: 11px;
-    border: solid #000;
-    border-width: 0 3px 3px 0;
-    transform: inherit;
-    z-index: 3;
-    transform: rotateZ(45deg);
-    }
-    .custom-checkbox input[type=\"checkbox\"]:checked + label:before {
-    border-color: #03A9F4;
-    background: #03A9F4;
-    }
-    .custom-checkbox input[type=\"checkbox\"]:checked + label:after {
-    border-color: #fff;
-    }
-    .custom-checkbox input[type=\"checkbox\"]:disabled + label:before {
-    color: #b8b8b8;
-    cursor: auto;
-    box-shadow: none;
-    background: #ddd;
-    }
-    /* Modal styles */
-    .modal .modal-dialog {
-    max-width: 400px;
-    }
-    .modal .modal-header, .modal .modal-body, .modal .modal-footer {
-    padding: 20px 30px;
-    }
-    .modal .modal-content {
-    border-radius: 3px;
-    font-size: 14px;
-    }
-    .modal .modal-footer {
-    background: #ecf0f1;
-    border-radius: 0 0 3px 3px;
-    }
-    .modal .modal-title {
-    display: inline-block;
-    }
-    .modal .form-control {
-    border-radius: 2px;
-    box-shadow: none;
-    border-color: #dddddd;
-    }
-    .modal textarea.form-control {
-    resize: vertical;
-    }
-    .modal .btn {
-    border-radius: 2px;
-    min-width: 100px;
-    }
-    .modal form label {
-    font-weight: normal;
-    }
+        .table-responsive {
+        margin: 30px 0;
+        }
+        .table-wrapper {
+        background: #fff;
+        padding: 20px 25px;
+        border-radius: 3px;
+        min-width: 1000px;
+        box-shadow: 0 1px 1px rgba(0,0,0,.05);
+        }
+        .table-title {
+        padding-bottom: 15px;
+        background: #435d7d;
+        color: #fff;
+        padding: 16px 30px;
+        min-width: 100%;
+        margin: -20px -25px 10px;
+        border-radius: 3px 3px 0 0;
+        }
+        .table-title h2 {
+        margin: 5px 0 0;
+        font-size: 16px;
+        }
+        .table-title .btn-group {
+        float: right;
+        }
+        .table-title .btn {
+        color: #fff;
+        float: right;
+        font-size: 10px;
+        border: none;
+        min-width: 50px;
+        border-radius: 2px;
+        border: none;
+        outline: none !important;
+        margin-left: 10px;
+        }
+        .table-title .btn i {
+        float: left;
+        font-size: 16px;
+        margin-right: 5px;
+        }
+        .table-title .btn span {
+        float: left;
+        margin-top: 2px;
+        }
+        table.table tr th, table.table tr td {
+        border-color: #e9e9e9;
+        padding: 12px 15px;
+        vertical-align: middle;
+        }
+        table.table tr th:first-child {
+        width: 60px;
+        }
+        table.table tr th:last-child {
+        width: 100px;
+        }
+        table.table-striped tbody tr:nth-of-type(odd) {
+        background-color: #fcfcfc;
+        }
+        table.table-striped.table-hover tbody tr:hover {
+        background: #f5f5f5;
+        }
+        table.table th i {
+        font-size: 10px;
+        margin: 0 5px;
+        cursor: pointer;
+        }
+        table.table td:last-child i {
+        opacity: 0.9;
+        font-size: 16px;
+        margin: 0 5px;
+        }
+        table.table td a {
+        font-weight: bold;
+        color: #566787;
+        display: inline-block;
+        text-decoration: none;
+        outline: none !important;
+        }
+        table.table td a:hover {
+        color: #2196F3;
+        }
+        table.table td a.edit {
+        color: #FFC107;
+        }
+        table.table td a.delete {
+        color: #F44336;
+        }
+        table.table td i {
+        font-size: 12px;
+        }
+        table.table .avatar {
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-right: 10px;
+        }
+        .pagination {
+        float: right;
+        margin: 0 0 5px;
+        }
+        .pagination li a {
+        border: none;
+        font-size: 10px;
+        min-width: 30px;
+        min-height: 30px;
+        color: #999;
+        margin: 0 2px;
+        line-height: 30px;
+        border-radius: 2px !important;
+        text-align: center;
+        padding: 0 6px;
+        }
+        .pagination li a:hover {
+        color: #666;
+        }
+        .pagination li.active a, .pagination li.active a.page-link {
+        background: #03A9F4;
+        }
+        .pagination li.active a:hover {
+        background: #0397d6;
+        }
+        .pagination li.disabled i {
+        color: #ccc;
+        }
+        .pagination li i {
+        font-size: 12px;
+        padding-top: 6px
+        }
+        .hint-text {
+        float: left;
+        margin-top: 10px;
+        font-size: 10px;
+        }
+        /* Custom checkbox */
+        .custom-checkbox {
+        position: relative;
+        }
+        .custom-checkbox input[type=\"checkbox\"] {
+        opacity: 0;
+        position: absolute;
+        margin: 5px 0 0 3px;
+        z-index: 9;
+        }
+        .custom-checkbox label:before{
+        width: 18px;
+        height: 18px;
+        }
+        .custom-checkbox label:before {
+        content: '';
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: text-top;
+        background: white;
+        border: 1px solid #bbb;
+        border-radius: 2px;
+        box-sizing: border-box;
+        z-index: 2;
+        }
+        .custom-checkbox input[type=\"checkbox\"]:checked + label:after {
+        content: '';
+        position: absolute;
+        left: 6px;
+        top: 3px;
+        width: 6px;
+        height: 11px;
+        border: solid #000;
+        border-width: 0 3px 3px 0;
+        transform: inherit;
+        z-index: 3;
+        transform: rotateZ(45deg);
+        }
+        .custom-checkbox input[type=\"checkbox\"]:checked + label:before {
+        border-color: #03A9F4;
+        background: #03A9F4;
+        }
+        .custom-checkbox input[type=\"checkbox\"]:checked + label:after {
+        border-color: #fff;
+        }
+        .custom-checkbox input[type=\"checkbox\"]:disabled + label:before {
+        color: #b8b8b8;
+        cursor: auto;
+        box-shadow: none;
+        background: #ddd;
+        }
+        /* Modal styles */
+        .modal .modal-dialog {
+            max-width: 400px;
+        }
+        .modal .modal-header, .modal .modal-body, .modal .modal-footer {
+            padding: 20px 30px;
+        }
+        .modal .modal-content {
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        .modal .modal-footer {
+            background: #ecf0f1;
+            border-radius: 0 0 3px 3px;
+        }
+        .modal .modal-title {
+            display: inline-block;
+        }
+        .modal .form-control {
+            border-radius: 2px;
+            box-shadow: none;
+            border-color: #dddddd;
+        }
+        .modal textarea.form-control {
+            resize: vertical;
+        }
+        .modal .btn {
+            border-radius: 2px;
+            min-width: 100px;
+        }
+        .modal form label {
+            font-weight: normal;
+        }
+
     </style>
+    <script>
+        \$(document).ready(function(){
+            // Activate tooltip
+            \$('[data-toggle=\"tooltip\"]').tooltip();
+
+            // Select/Deselect checkboxes
+            var checkbox = \$('table tbody input[type=\"checkbox\"]');
+            \$(\"#selectAll\").click(function(){
+                if(this.checked){
+                    checkbox.each(function(){
+                        this.checked = true;
+                    });
+                } else{
+                    checkbox.each(function(){
+                        this.checked = false;
+                    });
+                }
+            });
+            checkbox.click(function(){
+                if(!this.checked){
+                    \$(\"#selectAll\").prop(\"checked\", false);
+                }
+            });
+        });
+    </script>
 <div class=\"container-xl\">
     <div class=\"table-responsive\">
         <div class=\"table-wrapper\">
@@ -321,8 +347,11 @@ class __TwigTemplate_8f5d2cee2bdeb57146f7dc345984ed9687d37442443c15aefc31571e6f7
                         <h2>Manage <b>Employees</b></h2>
                     </div>
                     <div class=\"col-sm-6\">
-                        <a href=\"#addEmployeeModal\" class=\"btn btn-success\" data-toggle=\"modal\"><i class=\"material-icons\">&#xE147;</i> <span>Add New Employee</span></a>
-                        <a href=\"#deleteEmployeeModal\" class=\"btn btn-danger\" data-toggle=\"modal\"><i class=\"material-icons\">&#xE15C;</i> <span>Delete</span></a>
+                        <a href=\"";
+        // line 268
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("add_user");
+        echo "\" class=\"btn btn-success\"><i class=\"material-icons\">&#xE147;</i> <span>Add New Employee</span></a>
+                        <a href=\"#\" class=\"btn btn-danger\" ><i class=\"material-icons\">&#xE15C;</i> <span>Delete</span></a>
                     </div>
                 </div>
             </div>
@@ -351,11 +380,11 @@ class __TwigTemplate_8f5d2cee2bdeb57146f7dc345984ed9687d37442443c15aefc31571e6f7
                     </thead>
                     <tbody>
                     ";
-        // line 271
+        // line 297
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["users"]) || array_key_exists("users", $context) ? $context["users"] : (function () { throw new RuntimeError('Variable "users" does not exist.', 271, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["users"]) || array_key_exists("users", $context) ? $context["users"] : (function () { throw new RuntimeError('Variable "users" does not exist.', 297, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["user"]) {
-            // line 272
+            // line 298
             echo "                        <tr>
                             <td>
                                     <span class=\"custom-checkbox\">
@@ -364,52 +393,58 @@ class __TwigTemplate_8f5d2cee2bdeb57146f7dc345984ed9687d37442443c15aefc31571e6f7
                                     </span>
                             </td>
                             <td>";
-            // line 279
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "id", [], "any", false, false, false, 279), "html", null, true);
+            // line 305
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "id", [], "any", false, false, false, 305), "html", null, true);
             echo "</td>
                             <td>";
-            // line 280
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "getFirstName", [], "method", false, false, false, 280), "html", null, true);
+            // line 306
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "getFirstName", [], "method", false, false, false, 306), "html", null, true);
             echo "</td>
                             <td>";
-            // line 281
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "getLastName", [], "method", false, false, false, 281), "html", null, true);
+            // line 307
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "getLastName", [], "method", false, false, false, 307), "html", null, true);
             echo "</td>
                             <td>";
-            // line 282
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "getEmail", [], "method", false, false, false, 282), "html", null, true);
+            // line 308
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "getEmail", [], "method", false, false, false, 308), "html", null, true);
             echo "</td>
                             <td>";
-            // line 283
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "getNumber", [], "method", false, false, false, 283), "html", null, true);
+            // line 309
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "getNumber", [], "method", false, false, false, 309), "html", null, true);
             echo "</td>
                             <td>";
-            // line 284
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "getUsername", [], "method", false, false, false, 284), "html", null, true);
+            // line 310
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "getUsername", [], "method", false, false, false, 310), "html", null, true);
             echo "</td>
                             <td>";
-            // line 285
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "getPassword", [], "method", false, false, false, 285), "html", null, true);
+            // line 311
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "getPassword", [], "method", false, false, false, 311), "html", null, true);
             echo "</td>
                             <td>";
-            // line 286
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "getRole", [], "method", false, false, false, 286), "html", null, true);
+            // line 312
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "getRole", [], "method", false, false, false, 312), "html", null, true);
             echo "</td>
                             <td>";
-            // line 287
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "getBirthday", [], "method", false, false, false, 287), "m/d/Y"), "html", null, true);
+            // line 313
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "getBirthday", [], "method", false, false, false, 313), "m/d/Y"), "html", null, true);
             echo "</td>
                             <td>";
-            // line 288
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "getCreatedDateUser", [], "method", false, false, false, 288), "Y-m-d H:i:s"), "html", null, true);
+            // line 314
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "getCreatedDateUser", [], "method", false, false, false, 314), "Y-m-d H:i:s"), "html", null, true);
             echo "</td>
                             <td>";
-            // line 289
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "getLastUpdatedUser", [], "method", false, false, false, 289), "Y-m-d H:i:s"), "html", null, true);
+            // line 315
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "getLastUpdatedUser", [], "method", false, false, false, 315), "Y-m-d H:i:s"), "html", null, true);
             echo "</td>
                             <td>
-                                <a href=\"#editEmployeeModal\" class=\"edit\" data-toggle=\"modal\"><i class=\"material-icons\" data-toggle=\"tooltip\" title=\"Edit\">&#xE254;</i></a>
-                                <a href=\"#deleteEmployeeModal\" class=\"delete\" data-toggle=\"modal\"><i class=\"material-icons\" data-toggle=\"tooltip\" title=\"Delete\">&#xE872;</i></a>
+                                <a href=\"";
+            // line 317
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("modify_user", ["id" => twig_get_attribute($this->env, $this->source, $context["user"], "id", [], "any", false, false, false, 317)]), "html", null, true);
+            echo "\" class=\"edit\" ><i class=\"material-icons\" data-toggle=\"tooltip\" title=\"Edit\">&#xE254;</i></a>
+                                <a href=\"";
+            // line 318
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("delete_user", ["id" => twig_get_attribute($this->env, $this->source, $context["user"], "id", [], "any", false, false, false, 318)]), "html", null, true);
+            echo "\" class=\"delete\" ><i class=\"material-icons\" data-toggle=\"tooltip\" title=\"Delete\">&#xE872;</i></a>
                             </td>
                         </tr>
                     ";
@@ -417,7 +452,7 @@ class __TwigTemplate_8f5d2cee2bdeb57146f7dc345984ed9687d37442443c15aefc31571e6f7
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['user'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 296
+        // line 322
         echo "                    </tbody>
                 </table>
 
@@ -436,6 +471,7 @@ class __TwigTemplate_8f5d2cee2bdeb57146f7dc345984ed9687d37442443c15aefc31571e6f7
         </div>
     </div>
 </div>
+
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -457,7 +493,7 @@ class __TwigTemplate_8f5d2cee2bdeb57146f7dc345984ed9687d37442443c15aefc31571e6f7
 
     public function getDebugInfo()
     {
-        return array (  421 => 296,  408 => 289,  404 => 288,  400 => 287,  396 => 286,  392 => 285,  388 => 284,  384 => 283,  380 => 282,  376 => 281,  372 => 280,  368 => 279,  359 => 272,  355 => 271,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  456 => 322,  446 => 318,  442 => 317,  437 => 315,  433 => 314,  429 => 313,  425 => 312,  421 => 311,  417 => 310,  413 => 309,  409 => 308,  405 => 307,  401 => 306,  397 => 305,  388 => 298,  384 => 297,  352 => 268,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -475,225 +511,251 @@ class __TwigTemplate_8f5d2cee2bdeb57146f7dc345984ed9687d37442443c15aefc31571e6f7
     <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js\"></script>
     <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js\"></script>
     <style>
-    .table-responsive {
-    margin: 30px 0;
-    }
-    .table-wrapper {
-    background: #fff;
-    padding: 20px 25px;
-    border-radius: 3px;
-    min-width: 1000px;
-    box-shadow: 0 1px 1px rgba(0,0,0,.05);
-    }
-    .table-title {
-    padding-bottom: 15px;
-    background: #435d7d;
-    color: #fff;
-    padding: 16px 30px;
-    min-width: 100%;
-    margin: -20px -25px 10px;
-    border-radius: 3px 3px 0 0;
-    }
-    .table-title h2 {
-    margin: 5px 0 0;
-    font-size: 24px;
-    }
-    .table-title .btn-group {
-    float: right;
-    }
-    .table-title .btn {
-    color: #fff;
-    float: right;
-    font-size: 13px;
-    border: none;
-    min-width: 50px;
-    border-radius: 2px;
-    border: none;
-    outline: none !important;
-    margin-left: 10px;
-    }
-    .table-title .btn i {
-    float: left;
-    font-size: 21px;
-    margin-right: 5px;
-    }
-    .table-title .btn span {
-    float: left;
-    margin-top: 2px;
-    }
-    table.table tr th, table.table tr td {
-    border-color: #e9e9e9;
-    padding: 12px 15px;
-    vertical-align: middle;
-    }
-    table.table tr th:first-child {
-    width: 60px;
-    }
-    table.table tr th:last-child {
-    width: 100px;
-    }
-    table.table-striped tbody tr:nth-of-type(odd) {
-    background-color: #fcfcfc;
-    }
-    table.table-striped.table-hover tbody tr:hover {
-    background: #f5f5f5;
-    }
-    table.table th i {
-    font-size: 13px;
-    margin: 0 5px;
-    cursor: pointer;
-    }
-    table.table td:last-child i {
-    opacity: 0.9;
-    font-size: 22px;
-    margin: 0 5px;
-    }
-    table.table td a {
-    font-weight: bold;
-    color: #566787;
-    display: inline-block;
-    text-decoration: none;
-    outline: none !important;
-    }
-    table.table td a:hover {
-    color: #2196F3;
-    }
-    table.table td a.edit {
-    color: #FFC107;
-    }
-    table.table td a.delete {
-    color: #F44336;
-    }
-    table.table td i {
-    font-size: 19px;
-    }
-    table.table .avatar {
-    border-radius: 50%;
-    vertical-align: middle;
-    margin-right: 10px;
-    }
-    .pagination {
-    float: right;
-    margin: 0 0 5px;
-    }
-    .pagination li a {
-    border: none;
-    font-size: 13px;
-    min-width: 30px;
-    min-height: 30px;
-    color: #999;
-    margin: 0 2px;
-    line-height: 30px;
-    border-radius: 2px !important;
-    text-align: center;
-    padding: 0 6px;
-    }
-    .pagination li a:hover {
-    color: #666;
-    }
-    .pagination li.active a, .pagination li.active a.page-link {
-    background: #03A9F4;
-    }
-    .pagination li.active a:hover {
-    background: #0397d6;
-    }
-    .pagination li.disabled i {
-    color: #ccc;
-    }
-    .pagination li i {
-    font-size: 16px;
-    padding-top: 6px
-    }
-    .hint-text {
-    float: left;
-    margin-top: 10px;
-    font-size: 13px;
-    }
-    /* Custom checkbox */
-    .custom-checkbox {
-    position: relative;
-    }
-    .custom-checkbox input[type=\"checkbox\"] {
-    opacity: 0;
-    position: absolute;
-    margin: 5px 0 0 3px;
-    z-index: 9;
-    }
-    .custom-checkbox label:before{
-    width: 18px;
-    height: 18px;
-    }
-    .custom-checkbox label:before {
-    content: '';
-    margin-right: 10px;
-    display: inline-block;
-    vertical-align: text-top;
-    background: white;
-    border: 1px solid #bbb;
-    border-radius: 2px;
-    box-sizing: border-box;
-    z-index: 2;
-    }
-    .custom-checkbox input[type=\"checkbox\"]:checked + label:after {
-    content: '';
-    position: absolute;
-    left: 6px;
-    top: 3px;
-    width: 6px;
-    height: 11px;
-    border: solid #000;
-    border-width: 0 3px 3px 0;
-    transform: inherit;
-    z-index: 3;
-    transform: rotateZ(45deg);
-    }
-    .custom-checkbox input[type=\"checkbox\"]:checked + label:before {
-    border-color: #03A9F4;
-    background: #03A9F4;
-    }
-    .custom-checkbox input[type=\"checkbox\"]:checked + label:after {
-    border-color: #fff;
-    }
-    .custom-checkbox input[type=\"checkbox\"]:disabled + label:before {
-    color: #b8b8b8;
-    cursor: auto;
-    box-shadow: none;
-    background: #ddd;
-    }
-    /* Modal styles */
-    .modal .modal-dialog {
-    max-width: 400px;
-    }
-    .modal .modal-header, .modal .modal-body, .modal .modal-footer {
-    padding: 20px 30px;
-    }
-    .modal .modal-content {
-    border-radius: 3px;
-    font-size: 14px;
-    }
-    .modal .modal-footer {
-    background: #ecf0f1;
-    border-radius: 0 0 3px 3px;
-    }
-    .modal .modal-title {
-    display: inline-block;
-    }
-    .modal .form-control {
-    border-radius: 2px;
-    box-shadow: none;
-    border-color: #dddddd;
-    }
-    .modal textarea.form-control {
-    resize: vertical;
-    }
-    .modal .btn {
-    border-radius: 2px;
-    min-width: 100px;
-    }
-    .modal form label {
-    font-weight: normal;
-    }
+        .table-responsive {
+        margin: 30px 0;
+        }
+        .table-wrapper {
+        background: #fff;
+        padding: 20px 25px;
+        border-radius: 3px;
+        min-width: 1000px;
+        box-shadow: 0 1px 1px rgba(0,0,0,.05);
+        }
+        .table-title {
+        padding-bottom: 15px;
+        background: #435d7d;
+        color: #fff;
+        padding: 16px 30px;
+        min-width: 100%;
+        margin: -20px -25px 10px;
+        border-radius: 3px 3px 0 0;
+        }
+        .table-title h2 {
+        margin: 5px 0 0;
+        font-size: 16px;
+        }
+        .table-title .btn-group {
+        float: right;
+        }
+        .table-title .btn {
+        color: #fff;
+        float: right;
+        font-size: 10px;
+        border: none;
+        min-width: 50px;
+        border-radius: 2px;
+        border: none;
+        outline: none !important;
+        margin-left: 10px;
+        }
+        .table-title .btn i {
+        float: left;
+        font-size: 16px;
+        margin-right: 5px;
+        }
+        .table-title .btn span {
+        float: left;
+        margin-top: 2px;
+        }
+        table.table tr th, table.table tr td {
+        border-color: #e9e9e9;
+        padding: 12px 15px;
+        vertical-align: middle;
+        }
+        table.table tr th:first-child {
+        width: 60px;
+        }
+        table.table tr th:last-child {
+        width: 100px;
+        }
+        table.table-striped tbody tr:nth-of-type(odd) {
+        background-color: #fcfcfc;
+        }
+        table.table-striped.table-hover tbody tr:hover {
+        background: #f5f5f5;
+        }
+        table.table th i {
+        font-size: 10px;
+        margin: 0 5px;
+        cursor: pointer;
+        }
+        table.table td:last-child i {
+        opacity: 0.9;
+        font-size: 16px;
+        margin: 0 5px;
+        }
+        table.table td a {
+        font-weight: bold;
+        color: #566787;
+        display: inline-block;
+        text-decoration: none;
+        outline: none !important;
+        }
+        table.table td a:hover {
+        color: #2196F3;
+        }
+        table.table td a.edit {
+        color: #FFC107;
+        }
+        table.table td a.delete {
+        color: #F44336;
+        }
+        table.table td i {
+        font-size: 12px;
+        }
+        table.table .avatar {
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-right: 10px;
+        }
+        .pagination {
+        float: right;
+        margin: 0 0 5px;
+        }
+        .pagination li a {
+        border: none;
+        font-size: 10px;
+        min-width: 30px;
+        min-height: 30px;
+        color: #999;
+        margin: 0 2px;
+        line-height: 30px;
+        border-radius: 2px !important;
+        text-align: center;
+        padding: 0 6px;
+        }
+        .pagination li a:hover {
+        color: #666;
+        }
+        .pagination li.active a, .pagination li.active a.page-link {
+        background: #03A9F4;
+        }
+        .pagination li.active a:hover {
+        background: #0397d6;
+        }
+        .pagination li.disabled i {
+        color: #ccc;
+        }
+        .pagination li i {
+        font-size: 12px;
+        padding-top: 6px
+        }
+        .hint-text {
+        float: left;
+        margin-top: 10px;
+        font-size: 10px;
+        }
+        /* Custom checkbox */
+        .custom-checkbox {
+        position: relative;
+        }
+        .custom-checkbox input[type=\"checkbox\"] {
+        opacity: 0;
+        position: absolute;
+        margin: 5px 0 0 3px;
+        z-index: 9;
+        }
+        .custom-checkbox label:before{
+        width: 18px;
+        height: 18px;
+        }
+        .custom-checkbox label:before {
+        content: '';
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: text-top;
+        background: white;
+        border: 1px solid #bbb;
+        border-radius: 2px;
+        box-sizing: border-box;
+        z-index: 2;
+        }
+        .custom-checkbox input[type=\"checkbox\"]:checked + label:after {
+        content: '';
+        position: absolute;
+        left: 6px;
+        top: 3px;
+        width: 6px;
+        height: 11px;
+        border: solid #000;
+        border-width: 0 3px 3px 0;
+        transform: inherit;
+        z-index: 3;
+        transform: rotateZ(45deg);
+        }
+        .custom-checkbox input[type=\"checkbox\"]:checked + label:before {
+        border-color: #03A9F4;
+        background: #03A9F4;
+        }
+        .custom-checkbox input[type=\"checkbox\"]:checked + label:after {
+        border-color: #fff;
+        }
+        .custom-checkbox input[type=\"checkbox\"]:disabled + label:before {
+        color: #b8b8b8;
+        cursor: auto;
+        box-shadow: none;
+        background: #ddd;
+        }
+        /* Modal styles */
+        .modal .modal-dialog {
+            max-width: 400px;
+        }
+        .modal .modal-header, .modal .modal-body, .modal .modal-footer {
+            padding: 20px 30px;
+        }
+        .modal .modal-content {
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        .modal .modal-footer {
+            background: #ecf0f1;
+            border-radius: 0 0 3px 3px;
+        }
+        .modal .modal-title {
+            display: inline-block;
+        }
+        .modal .form-control {
+            border-radius: 2px;
+            box-shadow: none;
+            border-color: #dddddd;
+        }
+        .modal textarea.form-control {
+            resize: vertical;
+        }
+        .modal .btn {
+            border-radius: 2px;
+            min-width: 100px;
+        }
+        .modal form label {
+            font-weight: normal;
+        }
+
     </style>
+    <script>
+        \$(document).ready(function(){
+            // Activate tooltip
+            \$('[data-toggle=\"tooltip\"]').tooltip();
+
+            // Select/Deselect checkboxes
+            var checkbox = \$('table tbody input[type=\"checkbox\"]');
+            \$(\"#selectAll\").click(function(){
+                if(this.checked){
+                    checkbox.each(function(){
+                        this.checked = true;
+                    });
+                } else{
+                    checkbox.each(function(){
+                        this.checked = false;
+                    });
+                }
+            });
+            checkbox.click(function(){
+                if(!this.checked){
+                    \$(\"#selectAll\").prop(\"checked\", false);
+                }
+            });
+        });
+    </script>
 <div class=\"container-xl\">
     <div class=\"table-responsive\">
         <div class=\"table-wrapper\">
@@ -703,8 +765,8 @@ class __TwigTemplate_8f5d2cee2bdeb57146f7dc345984ed9687d37442443c15aefc31571e6f7
                         <h2>Manage <b>Employees</b></h2>
                     </div>
                     <div class=\"col-sm-6\">
-                        <a href=\"#addEmployeeModal\" class=\"btn btn-success\" data-toggle=\"modal\"><i class=\"material-icons\">&#xE147;</i> <span>Add New Employee</span></a>
-                        <a href=\"#deleteEmployeeModal\" class=\"btn btn-danger\" data-toggle=\"modal\"><i class=\"material-icons\">&#xE15C;</i> <span>Delete</span></a>
+                        <a href=\"{{ path(\"add_user\") }}\" class=\"btn btn-success\"><i class=\"material-icons\">&#xE147;</i> <span>Add New Employee</span></a>
+                        <a href=\"#\" class=\"btn btn-danger\" ><i class=\"material-icons\">&#xE15C;</i> <span>Delete</span></a>
                     </div>
                 </div>
             </div>
@@ -752,8 +814,8 @@ class __TwigTemplate_8f5d2cee2bdeb57146f7dc345984ed9687d37442443c15aefc31571e6f7
                             <td>{{ user.getCreatedDateUser()|date('Y-m-d H:i:s') }}</td>
                             <td>{{ user.getLastUpdatedUser()|date('Y-m-d H:i:s') }}</td>
                             <td>
-                                <a href=\"#editEmployeeModal\" class=\"edit\" data-toggle=\"modal\"><i class=\"material-icons\" data-toggle=\"tooltip\" title=\"Edit\">&#xE254;</i></a>
-                                <a href=\"#deleteEmployeeModal\" class=\"delete\" data-toggle=\"modal\"><i class=\"material-icons\" data-toggle=\"tooltip\" title=\"Delete\">&#xE872;</i></a>
+                                <a href=\"{{ path('modify_user', {'id': user.id}) }}\" class=\"edit\" ><i class=\"material-icons\" data-toggle=\"tooltip\" title=\"Edit\">&#xE254;</i></a>
+                                <a href=\"{{ path('delete_user', {'id': user.id}) }}\" class=\"delete\" ><i class=\"material-icons\" data-toggle=\"tooltip\" title=\"Delete\">&#xE872;</i></a>
                             </td>
                         </tr>
                     {% endfor %}
@@ -775,6 +837,7 @@ class __TwigTemplate_8f5d2cee2bdeb57146f7dc345984ed9687d37442443c15aefc31571e6f7
         </div>
     </div>
 </div>
-{% endblock %}", "user/userinterface.html.twig", "C:\\Users\\Mortadha\\Desktop\\Programming\\PiDev\\dev-mastersWEB\\templates\\user\\userinterface.html.twig");
+
+{% endblock %}", "user/userinterface.html.twig", "C:\\Users\\Mortadha\\Desktop\\Programing\\symfony\\dev-mastersWEB\\templates\\user\\userinterface.html.twig");
     }
 }
