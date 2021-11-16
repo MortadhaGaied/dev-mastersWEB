@@ -65,7 +65,7 @@ class __TwigTemplate_8f5d2cee2bdeb57146f7dc345984ed9687d37442443c15aefc31571e6f7
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Hello UserController!";
+        echo "Affichage";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -86,7 +86,7 @@ class __TwigTemplate_8f5d2cee2bdeb57146f7dc345984ed9687d37442443c15aefc31571e6f7
 
         // line 6
         echo "    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Roboto|Varela+Round\">
-    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css\">
+
     <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\">
     <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\">
     <script src=\"https://code.jquery.com/jquery-3.5.1.min.js\"></script>
@@ -344,13 +344,13 @@ class __TwigTemplate_8f5d2cee2bdeb57146f7dc345984ed9687d37442443c15aefc31571e6f7
             <div class=\"table-title\">
                 <div class=\"row\">
                     <div class=\"col-sm-6\">
-                        <h2>Manage <b>Employees</b></h2>
+                        <h2>Manage <b>Users</b></h2>
                     </div>
                     <div class=\"col-sm-6\">
                         <a href=\"";
         // line 268
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("add_user");
-        echo "\" class=\"btn btn-success\"><i class=\"material-icons\">&#xE147;</i> <span>Add New Employee</span></a>
+        echo "\" class=\"btn btn-success\"><i class=\"material-icons\">&#xE147;</i> <span>Add New User</span></a>
                         <a href=\"#\" class=\"btn btn-danger\" ><i class=\"material-icons\">&#xE15C;</i> <span>Delete</span></a>
                     </div>
                 </div>
@@ -460,9 +460,9 @@ class __TwigTemplate_8f5d2cee2bdeb57146f7dc345984ed9687d37442443c15aefc31571e6f7
                 <div class=\"hint-text\">Showing <b>5</b> out of <b>25</b> entries</div>
                 <ul class=\"pagination\">
                     <li class=\"page-item disabled\"><a href=\"#\">Previous</a></li>
-                    <li class=\"page-item\"><a href=\"#\" class=\"page-link\">1</a></li>
+                    <li class=\"page-item active\"><a href=\"#\" class=\"page-link\">1</a></li>
                     <li class=\"page-item\"><a href=\"#\" class=\"page-link\">2</a></li>
-                    <li class=\"page-item active\"><a href=\"#\" class=\"page-link\">3</a></li>
+                    <li class=\"page-item \"><a href=\"#\" class=\"page-link\">3</a></li>
                     <li class=\"page-item\"><a href=\"#\" class=\"page-link\">4</a></li>
                     <li class=\"page-item\"><a href=\"#\" class=\"page-link\">5</a></li>
                     <li class=\"page-item\"><a href=\"#\" class=\"page-link\">Next</a></li>
@@ -500,11 +500,11 @@ class __TwigTemplate_8f5d2cee2bdeb57146f7dc345984ed9687d37442443c15aefc31571e6f7
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Hello UserController!{% endblock %}
+{% block title %}Affichage{% endblock %}
 
 {% block body %}
     <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Roboto|Varela+Round\">
-    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css\">
+
     <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\">
     <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\">
     <script src=\"https://code.jquery.com/jquery-3.5.1.min.js\"></script>
@@ -762,10 +762,10 @@ class __TwigTemplate_8f5d2cee2bdeb57146f7dc345984ed9687d37442443c15aefc31571e6f7
             <div class=\"table-title\">
                 <div class=\"row\">
                     <div class=\"col-sm-6\">
-                        <h2>Manage <b>Employees</b></h2>
+                        <h2>Manage <b>Users</b></h2>
                     </div>
                     <div class=\"col-sm-6\">
-                        <a href=\"{{ path(\"add_user\") }}\" class=\"btn btn-success\"><i class=\"material-icons\">&#xE147;</i> <span>Add New Employee</span></a>
+                        <a href=\"{{ path(\"add_user\") }}\" class=\"btn btn-success\"><i class=\"material-icons\">&#xE147;</i> <span>Add New User</span></a>
                         <a href=\"#\" class=\"btn btn-danger\" ><i class=\"material-icons\">&#xE15C;</i> <span>Delete</span></a>
                     </div>
                 </div>
@@ -826,9 +826,9 @@ class __TwigTemplate_8f5d2cee2bdeb57146f7dc345984ed9687d37442443c15aefc31571e6f7
                 <div class=\"hint-text\">Showing <b>5</b> out of <b>25</b> entries</div>
                 <ul class=\"pagination\">
                     <li class=\"page-item disabled\"><a href=\"#\">Previous</a></li>
-                    <li class=\"page-item\"><a href=\"#\" class=\"page-link\">1</a></li>
+                    <li class=\"page-item active\"><a href=\"#\" class=\"page-link\">1</a></li>
                     <li class=\"page-item\"><a href=\"#\" class=\"page-link\">2</a></li>
-                    <li class=\"page-item active\"><a href=\"#\" class=\"page-link\">3</a></li>
+                    <li class=\"page-item \"><a href=\"#\" class=\"page-link\">3</a></li>
                     <li class=\"page-item\"><a href=\"#\" class=\"page-link\">4</a></li>
                     <li class=\"page-item\"><a href=\"#\" class=\"page-link\">5</a></li>
                     <li class=\"page-item\"><a href=\"#\" class=\"page-link\">Next</a></li>
@@ -838,6 +838,6 @@ class __TwigTemplate_8f5d2cee2bdeb57146f7dc345984ed9687d37442443c15aefc31571e6f7
     </div>
 </div>
 
-{% endblock %}", "user/userinterface.html.twig", "C:\\Users\\Mortadha\\Desktop\\Programing\\symfony\\dev-mastersWEB\\templates\\user\\userinterface.html.twig");
+{% endblock %}", "user/userinterface.html.twig", "C:\\Users\\Mortadha\\Desktop\\Programming\\PiDev\\dev-mastersWEB\\templates\\user\\userinterface.html.twig");
     }
 }
